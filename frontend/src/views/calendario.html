@@ -7,33 +7,29 @@
 
 <div class="form" >
     <h1>Eventos</h1>
-    <button type="button" class="btn-plus">+ Agregar Evento</button>
     <div class="clear"></div>
     <form class="cad-eventos">
         <!-- nome -->
         <div class="form-group">
         <label for="nomeDoEvento">Nome do Evento:</label>
-        <input type="text" name="nomeDoEvento" value="" id="nomeDoEvento" ng-model="nome">
+        <input type="text" name="nomeDoEvento" value="" id="nomeDoEvento" ng-model="compromisso.nome">
         </div>
         <!-- data -->
         <div class="form-group">
         <label for="dataDoEvento">Data do Evento:</label>
-        <input type="text" name="dataDoEvento" value="" placeholder="DD/MM/AA" id="datepicker" ng-model="data">
+        <input type="text" name="dataDoEvento" value="" placeholder="DD/MM/AA" id="datepicker" ng-model="compromisso.data">
         </div>
         <!-- tipo -->
         <div class="form-group">
             <label for="typeEvento">Tipo Evento:</label>
-            <select ng-model="tipoDeEvento">
+            <select ng-model="compromisso.tipoDeEvento">
                 <option value="">Escolha uma opção</option>
                 <option value="feriado">Feriado</option>
                 <option value="reuniao">Reunião</option>
             </select>
-            {{nome}}
-            {{data}}
-            {{tipoDeEvento}}
         </div>
         <!-- Agregar -->
-        <button type="button" class="agregar" ng-click="adicionar()">Agregar</button>
+        <button type="button" class="agregar" ng-click="adicionar(compromisso)">Agregar</button>
 
     </form>
 </div>
@@ -43,7 +39,7 @@
         <th>Nome do Evento</th>
         <th>Data do Evento</th>
     </tr>
-    <tr>
+    <tr ng-repeat="evento in listaDeEventos">
         <td>{{evento.nome}}</td>
         <td>{{evento.data}}</td>
     </tr>
