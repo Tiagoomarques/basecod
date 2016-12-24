@@ -40,15 +40,17 @@
     </form>
 </div>
 
-<table>
-    <tr>
-        <th>Nome do Evento</th>
-        <th>Data do Evento</th>
-        <th>Tipo do Evento</th>
-    </tr>
-    <tr ng-repeat="evento in listaDeEventos">
-        <td>{{evento.nome}}</td>
-        <td>{{evento.data}}</td>
-        <td>{{evento.tipoDeEvento}}</td>
-    </tr>
-</table>
+<div class="table">
+    <table>
+        <tr>
+            <th>Nome do Evento</th>
+            <th>Data do Evento</th>
+            <th>Tipo do Evento</th>
+        </tr>
+        <tr ng-repeat="evento in listaDeEventos">
+            <td>{{evento.nome}}</td>
+            <td>{{evento.data}}</td>
+            <td>{{evento.tipoDeEvento}}</td>
+        </tr>
+    </table>
+</div>
