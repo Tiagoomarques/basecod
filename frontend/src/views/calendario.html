@@ -5,6 +5,12 @@
     } );
 </script>
 
+<style>
+    button:disabled{
+        opacity: .5;
+    }
+</style>
+
 <div class="form" >
     <h1>Eventos</h1>
     <div class="clear"></div>
@@ -29,7 +35,7 @@
             </select>
         </div>
         <!-- Agregar -->
-        <button type="button" class="agregar" ng-click="adicionar(compromisso)">Agregar</button>
+        <button type="button" class="agregar" ng-click="adicionar(compromisso)" ng-disabled="!compromisso.nome || !compromisso.data || !compromisso.tipoDeEvento">Agregar</button>
 
     </form>
 </div>
@@ -38,9 +44,11 @@
     <tr>
         <th>Nome do Evento</th>
         <th>Data do Evento</th>
+        <th>Tipo do Evento</th>
     </tr>
     <tr ng-repeat="evento in listaDeEventos">
         <td>{{evento.nome}}</td>
         <td>{{evento.data}}</td>
+        <td>{{evento.tipoDeEvento}}</td>
     </tr>
 </table>
