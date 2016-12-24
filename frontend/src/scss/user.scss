@@ -1,0 +1,171 @@
+#user{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background: #fff;
+    box-sizing: border-box;
+
+    .user-info{
+        padding: 10px;
+
+        li{
+            float: left;
+            margin-top: 10px;
+            margin-left: 30px;
+            cursor: pointer;
+            height: auto;
+            &:last-child{
+                padding-right: 10px;
+            }
+            // &:hover{
+            //     opacity: .75;
+            // }
+
+            &:last-child ul{
+                position: absolute;
+                background: #fff;
+                box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+                top: 50px;
+                right: 15px;
+                box-sizing: border-box;
+                li{
+                    float: none;
+                    width: 100%;
+                    text-align: left;
+                    padding-bottom: 5px;
+                    background: #fff;
+                    box-sizing: border-box;
+                    margin: 0px;
+                    padding: 10px;
+                    a{
+                        color: #000;
+                        display: block;
+                        outline: none;
+                    }
+                    &:hover{
+                        background:#f3f2f2
+                    }
+                }
+
+            }
+        }
+        img{
+            border-radius: 100%;
+            width: 30px;
+            margin-top: -10px;
+            border: 1px solid rgba(0,0,0,.3)
+        }
+    }
+}
+.aside-content-center{
+    // position: relative;
+    .social{
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+
+        .emails{
+            width: 36%;
+            height: 250px;
+            background: #fff;
+
+            h2{
+                text-align: center;
+                font-size: 20px;
+                padding: 10px;
+            }
+            ul{
+                margin-top: 27px;
+            }
+            li{
+                border-bottom: 1px solid rgba(0,0,0,.1);
+                height: 40px;
+                padding-top: 20px;
+                &:last-child{
+                    border-bottom: 0;
+                }
+                a{
+                    color: #000;
+                    .check{
+                        border-right: 1px solid  rgba(0,0,0,.3);
+                        padding-right: 5px;
+                    }
+                }//a
+
+                span{
+                    float: left;
+                    margin-left: 10px;
+                    cursor: pointer;
+
+                    &:last-child{
+                        float: right;
+                        margin-right: 20px;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }// spans
+            }// li's
+        }// emails
+    }
+    .sicial-media{
+        width: 27%;
+        height: 250px;
+        float: left;
+        margin-right: 15px;
+
+        li{
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            height: 73px;
+            padding: 5px;
+            margin-bottom: 15px;
+            background: #fff;
+
+            .social-icon{
+                margin: 12px;
+                width: 25px;
+                text-align: center;
+                font-size: 20px;
+                border-radius: 100%;
+                padding: 10px;
+                background: #2498ef;
+                color: #fff;
+
+            }
+            &:nth-child(2) .social-icon{
+                background: #d26159;
+            }
+            &:nth-child(3) .social-icon{
+                background: #2dcc70;
+            }
+
+            .social-week{
+                margin-left: 20px;
+                margin-top: 10px;
+                h2{
+                    font-size: 23px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+    section{
+        .navegators{
+            width: 34.6%;
+            height: 250px;
+            background: #fff;
+            float: right;
+
+            .navegators-info{
+                margin: 20px;
+                width: 60%;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "description": "",
+  "main": "Gulpfile.js",
+  "authors": [
+    "Joao Pedro Abreu <pedro@scktech.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.9",
+    "angular-route": "^1.5.9",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "font-awesome": "^4.7.0"
+  }
+}

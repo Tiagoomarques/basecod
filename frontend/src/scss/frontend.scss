@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'vars';
+@import 'header';
+@import 'user';
+@import 'calendarmore';
+@import 'personal-profiles';
+@import 'calendario';
+@import 'config-Dashboard';
+@import 'perfil';
+//vars
+body{
+    background: #f0f0f0;
+    // width: 100%;
+}
+
+.clear{clear: both;}
+.clearfix{
+    &::after{
+        content: " ";
+        width: 1px;
+        height: 1px;
+        background: none;
+        opacity: 0;
+        visibility: hidden;
+        clear:both;
+    }
+}// clearfix
+.aside-content-center{
+    padding-left: 300px;
+    margin-left: 0px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+}// aside-content-center

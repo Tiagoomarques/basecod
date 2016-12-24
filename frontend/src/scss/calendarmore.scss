@@ -1,0 +1,102 @@
+.section2{
+    width: 100%;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.calendar{
+    width: 49.5%;
+    height: 300px;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    margin-right: 15px;
+
+    .cal-local{
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        img{
+            MAX-width: 100px;
+            width: 100%;
+            padding: 10px;
+
+        }
+        h2{
+            font-size: 20px;
+            font-size-adjust: auto;
+        }
+
+      }
+      table{
+          width: 100%;
+          margin-top: 58px;
+
+         tr{
+             width: 100%;
+             td{
+                 width: 5%;
+                 text-align: center;
+                 padding: 10px;
+             }
+         }
+
+    }
+}//section2
+.sales{
+    width: 48.9%;
+    float: right;
+    height: 300px;
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+
+    li{
+        height: 34px;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        position: relative;
+        padding-top: 15px;
+
+        &:first-child{
+            height: 80px;
+        }
+        &:last-child{
+            border-bottom: 0px;
+        }
+        span{
+            float: right;
+            background: #4ec3e4;
+            width: 40px;
+            height: 18px;
+            text-align: center;
+            padding-top: 5px;
+            margin: 4px;
+            position: absolute;
+            right: 3%;
+            top: 10px;
+        }
+        &:nth-child(3) span{
+            background: #db6c5b;
+        }
+        &:nth-child(4) span{
+            background: #ffc55a;
+        }
+    }
+}//sales
+.fade.ng-leave {
+    color: red;
+    animation: my_fade_animation 5s linear;
+    -webkit-animation: my_fade_animation 5s linear;
+}
+
+@keyframes my_fade_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+@-webkit-keyframes my_fade_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}

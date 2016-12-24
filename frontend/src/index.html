@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Intranet</title>
+        <link rel="stylesheet" href="css/core.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <base href="/"> -->
+    </head>
+    <body ng-app="App">
+    <header id="menu" class="fleft">
+    	<nav>
+        	<h1 class="logo">INTRANET</h1>
+    		<ul>
+    			<li>
+                    <a class="" href="#home"><i class="fa fa-left fa-home" aria-hidden="true"></i>
+                    <p>Home</p>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </li>
+    			<li>
+                    <a class="" href="#calendario"><i class="fa fa-left fa-calendar" aria-hidden="true"></i>
+                    <p>Calendário </p>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </li>
+    			<li>
+                    <a class="" href="#config"><i class="fa fa-left fa-cog" aria-hidden="true"></i>
+                     <p>Configurações </p>
+                     <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                 </li>
+                <li>
+                    <a class="" href=""><i class="fa fa-left fa-users" aria-hidden="true"></i>
+                    <p>Sala de Reunião</p>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </li>
+    		</ul>
+    	</nav>
+    </header><!-- fim header -->
+    <main>
+        <div id="user" class="fright">
+            <div class="user-info">
+                <ul class="fright">
+                    <li><i class="fa fa-bell-o" aria-hidden="true"></i></li>
+                    <li><p>Samuel Parkins</p></li>
+                    <li><img src="images/user.jpeg"  alt="perfil"></li>
+                    <li>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        <ul>
+                            <li><a href="#">Configurações</a></li>
+                            <li><a href="#">Usiarios</a></li>
+                            <li><a href="#/perfil">Perfil</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- fim user -->
+        <div class="aside-content-center" ng-view>
+        </div>
+    </main>
+
+        <script type="text/javascript" src="js/core.js"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </body>
+</html>
